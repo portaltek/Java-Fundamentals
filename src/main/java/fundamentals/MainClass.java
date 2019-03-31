@@ -1,4 +1,4 @@
-package djava;
+package fundamentals;
 
 public class MainClass {
 

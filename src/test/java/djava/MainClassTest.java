@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 
-import djava.MainClass;
+import fundamentals.MainClass;
 
 public class MainClassTest {
 
