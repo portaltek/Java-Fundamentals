@@ -17,11 +17,11 @@ public class MySingletonLazyInnerClass implements Serializable {
 
 	// Inner classes are not loaded until they are referenced.
 	private static class Holder {
-		private static MySingletonLazyInnerClass logger = new MySingletonLazyInnerClass();
+		private static MySingletonLazyInnerClass instance = new MySingletonLazyInnerClass();
 	}
 
 	public static MySingletonLazyInnerClass getInstance() {
-		return Holder.logger;
+		return Holder.instance;
 	}
 
 	public int getValue() {
@@ -32,8 +32,8 @@ public class MySingletonLazyInnerClass implements Serializable {
 		this.value = value;
 	}
 	
-	protected Object readResolve() {
-		return getInstance();
-	}
+//	protected Object readResolve() {
+//		return getInstance();
+//	}
 
 }

@@ -59,11 +59,13 @@ public class OverrideMethodChild extends OverrideMethodParent {
 
 	public void parameterObject(Object param) {
 	}
-	//MUST BE SAME CLASS! otherwise it becomes overloaded method.
+
+	// MUST BE SAME CLASS! otherwise it becomes overloaded method.
 	public void parameterObject(OverrideMethodParent param) {
 	}
 
 	public void parameterObject(OverrideMethodChild param) {
 	}
+
 
 }
