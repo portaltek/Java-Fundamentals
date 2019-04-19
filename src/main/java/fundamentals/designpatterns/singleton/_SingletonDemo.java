@@ -9,9 +9,9 @@ import java.lang.reflect.Constructor;
  * Do you need to serialize the singleton object multiple times?
  * 
  */
-public class MySingletonDemo {
+public class _SingletonDemo {
 	public static void main(String... strings) throws InterruptedException {
-		MySingletonDemo mySingletonDemo = new MySingletonDemo();
+		_SingletonDemo mySingletonDemo = new _SingletonDemo();
 		mySingletonDemo.validateEnumSingletonWithReflection();
 	}
 

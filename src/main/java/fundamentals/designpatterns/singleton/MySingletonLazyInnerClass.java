@@ -32,8 +32,8 @@ public class MySingletonLazyInnerClass implements Serializable {
 		this.value = value;
 	}
 	
-//	protected Object readResolve() {
-//		return getInstance();
-//	}
+	protected Object readResolve() {
+		return getInstance();
+	}
 
 }
